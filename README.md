@@ -22,3 +22,39 @@ Threads:
 nodejs is single thread but some of function nodejs run outside of that single thread so simply declaring that node is single threaded is not absolutely true. the event loop uses a single thread but a lot of the code that you and i write does not actually execute inside that thread entirely
 
 - event loop job is to look at the stack and look at the task queue, if the stack is empty it takes the first thing on the task queue and pushes it on to the stack
+
+#Review
+
+Node index.js --> process and execute code in index.js file --> do we still have work to do? look at timers, OS tasks, threadpool
+
+- no exit the program
+- yes --> run setTimeout's, setInterval's --> run callbacks for any os tasks or threadpool tasks that are done. this is 99% of our code. --> pause and wait for stuff to happen, run any 'setImmediate' functions --> handle close envets ---> check agin do we still have work to do? again and again
+
+#Performance 
+- how we can set up node to run inside of cluster mode
++ cluster mode is used to start up multiple copies of node that are all running your server inside them, a similar fashion as making node kind of multi threaded
+- these worker threads are going to use the thread pool that is set up by libuv whenever we start up our node application
+- starting up node in cluster mode to handle a lot of heavy duty performance relevant calculations or whatever might be that you are doing the recommended approach here for improving performance of your application
+- using worker threads is something that is way more experimental and it's something that i am showing you just for the sake of your knowledge
+
+#Cluster
+- we are going to be starting up multiple node processes
+one kind of like overarching process called the cluster manager, the cluster manager itself doesn't actually execute any application, it's responsible for monitoring the health of each of these individual instances
+diagram: run node index.js --> index.js --> node instance
++ run a command at the terminal like node index.js takes the contents of that file, it executes it, then starts up the event loop, when we start to use clustering this entire flow right here changes just a little bit.
++ when we start to use clustering we are still going to run something like node index.js at command line node is  still going to boot up our application by reading the contents of that file and launching a node instance
++ the first instance of node that gets launched when we run that command is what we refer to as the cluster
++ when we use the cluster it's automatically created for us the cluster manager is resposible for starting up worker instances
++ there's one particular function on that cluster module called fork and whenever we call that fork function
++ so when we call fork node internally goes back to our index.js file and it executes it a second time but it executes it that second time in a slightly different mode
++ test your server ab -c 50 -n 500 localhost:3000/fast -c 50 (chạy đồng thời 50 request)
+-n 500(chạy tổng cộng 500 request)
+
+
+overarching : bao chùm
+-adjective: the overarching mangroves
+-verb: an old dirt road, overarched by forest
+spread out: trải ra
+refer: tham khảo
+fork: cái nĩa 
+
