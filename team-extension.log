@@ -1,0 +1,50 @@
+2019-01-16T12:36:12.857Z - info:   [09824] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1 ***
+2019-01-16T12:36:12.857Z - info:   [09824] AzureReposVSCode/1.144.1 (VSCode 1.30.2; Windows_NT 10.0.17134; Node 8.9.3)
+2019-01-16T12:36:12.858Z - debug:  [09824] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-16T12:36:12.858Z - debug:  [09824] No External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-16T12:36:12.859Z - debug:  [09824] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-16T12:36:12.859Z - debug:  [09824] TFVC Creating Tfvc object with localPath='undefined'
+2019-01-16T12:36:12.868Z - debug:  [09824] Using TFS proxy: 
+2019-01-16T12:36:12.869Z - debug:  [09824] TFVC Retrieved from settings; localPath=''
+2019-01-16T12:36:12.869Z - warn:   [09824] TFVC Couldn't find where the TF command lives on disk.
+2019-01-16T12:36:12.869Z - error:  [09824] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2019-01-17T14:11:46.383Z - info:   [11844] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1 ***
+2019-01-17T14:11:46.384Z - info:   [11844] AzureReposVSCode/1.144.1 (VSCode 1.30.2; Windows_NT 10.0.17134; Node 8.9.3)
+2019-01-17T14:11:46.384Z - debug:  [11844] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-17T14:11:46.384Z - debug:  [11844] No External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-17T14:11:46.411Z - debug:  [11844] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-17T14:11:46.411Z - debug:  [11844] TFVC Creating Tfvc object with localPath='undefined'
+2019-01-17T14:11:46.413Z - debug:  [11844] Using TFS proxy: 
+2019-01-17T14:11:46.413Z - debug:  [11844] TFVC Retrieved from settings; localPath=''
+2019-01-17T14:11:46.413Z - warn:   [11844] TFVC Couldn't find where the TF command lives on disk.
+2019-01-17T14:11:46.415Z - error:  [11844] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2019-01-18T17:49:26.079Z - info:   [13872] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1 ***
+2019-01-18T17:49:26.079Z - info:   [13872] AzureReposVSCode/1.144.1 (VSCode 1.30.2; Windows_NT 10.0.17134; Node 8.9.3)
+2019-01-18T17:49:26.080Z - debug:  [13872] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-18T17:49:26.080Z - debug:  [13872] No External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-18T17:49:26.090Z - debug:  [13872] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-18T17:49:26.090Z - debug:  [13872] TFVC Creating Tfvc object with localPath='undefined'
+2019-01-18T17:49:26.091Z - debug:  [13872] Using TFS proxy: 
+2019-01-18T17:49:26.091Z - debug:  [13872] TFVC Retrieved from settings; localPath=''
+2019-01-18T17:49:26.091Z - warn:   [13872] TFVC Couldn't find where the TF command lives on disk.
+2019-01-18T17:49:26.092Z - error:  [13872] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2019-01-19T03:50:09.874Z - info:   [13244] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1 ***
+2019-01-19T03:50:09.875Z - info:   [13244] AzureReposVSCode/1.144.1 (VSCode 1.30.2; Windows_NT 10.0.17134; Node 8.9.3)
+2019-01-19T03:50:09.875Z - debug:  [13244] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-19T03:50:09.875Z - debug:  [13244] No External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-19T03:50:09.886Z - debug:  [13244] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-19T03:50:09.886Z - debug:  [13244] TFVC Creating Tfvc object with localPath='undefined'
+2019-01-19T03:50:09.887Z - debug:  [13244] Using TFS proxy: 
+2019-01-19T03:50:09.887Z - debug:  [13244] TFVC Retrieved from settings; localPath=''
+2019-01-19T03:50:09.887Z - warn:   [13244] TFVC Couldn't find where the TF command lives on disk.
+2019-01-19T03:50:09.889Z - error:  [13244] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2019-01-19T11:30:11.298Z - info:   [11116] *** FOLDER: c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1 ***
+2019-01-19T11:30:11.298Z - info:   [11116] AzureReposVSCode/1.144.1 (VSCode 1.30.2; Windows_NT 10.0.17134; Node 8.9.3)
+2019-01-19T11:30:11.299Z - debug:  [11116] Looking for an External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-19T11:30:11.299Z - debug:  [11116] No External Context at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-19T11:30:11.308Z - debug:  [11116] Looking for TFVC repository at c:\Users\Admins\Desktop\learning node js\Project\NodeJS - Advance - 1
+2019-01-19T11:30:11.309Z - debug:  [11116] TFVC Creating Tfvc object with localPath='undefined'
+2019-01-19T11:30:11.309Z - debug:  [11116] Using TFS proxy: 
+2019-01-19T11:30:11.309Z - debug:  [11116] TFVC Retrieved from settings; localPath=''
+2019-01-19T11:30:11.309Z - warn:   [11116] TFVC Couldn't find where the TF command lives on disk.
+2019-01-19T11:30:11.309Z - error:  [11116] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.

@@ -23,18 +23,17 @@ function doHash() {
 doRequest();
 
 fs.readFile('multitask.js', 'utf8', () => {
-  //timer 
+  //timer
   // we call fs.readFile --> Node gets some 'stats' on the file (requires HD access) note here:
   // the thread will go to take care other task because this step go into hhd wait for return infomation
   // --> HD accessed, stats returned note here:
   // the thread will go to take care other task because this step go into hhd wait for return infomation --> Node requests to read the file --> HD accessed,
   // file contents streamed back to app --> node returens file contents to us
   console.log('FS:', Date.now() - start);
-})
+});
 
-doHash()
-doHash()
-doHash()
+doHash();
+doHash();
+doHash();
 
 // because  dohash and readfile also take thread pool
-
