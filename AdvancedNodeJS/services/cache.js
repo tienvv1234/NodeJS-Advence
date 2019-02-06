@@ -11,7 +11,7 @@ const exec = mongoose.Query.prototype.exec;
 // we are using the function keyword and not an arrow function
 // because an arrow function tryies to mess around with the value of
 // this inside the function.
-mongoose.Query.prototype.exec = async function() {
+mongoose.Query.prototype.exec = async function () {
   // so inside this function if we were to write out `this` it should
   // reference the query that is being produced
   console.log('Im about to run a query');
@@ -25,23 +25,31 @@ mongoose.Query.prototype.exec = async function() {
 
   // console.log(this.getQuery()); // --> { _user: '5c45e9851bb70230a4b7d201' }
   // console.log(this.mongooseCollection.name); // --> blogs
-  const key = Object.assign({}, this.getQuery(), {
+  const key = JSON.stringify(Object.assign({}, this.getQuery(), {
     collection: this.mongooseCollection.name
-  });
+  }));
 
   // console.log(key);
-
+  console.log(1)
   // See if we have avalue for 'key' in redis
-  const cacheValue = await client.get(JSON.stringify(key));
+  const cacheValue = await client.get(key);
 
   // if we do, return that
   if (cacheValue) {
-    console.log(cacheValue);
-  }
+    console.log(2)
+    console.log('cacheValue', cacheValue);
+    const doc = JSON.parse(cacheValue);
 
+    return Array.isArray(doc) ? doc.map(d => new this.model(d)) : new this.model(doc);
+  }
+  console.log(3)
   // otherwise, issue the query and store the result
   const result = await exec.apply(this, arguments);
-  console.log('result', result);
+  console.log(4)
+  // console.log('result', result.validate);
+  client.set(key, JSON.stringify(result));
+  console.log(5)
+  return result;
 
   // return mongoose.Query.prototype.exec.apply(this, arguments);
 };
