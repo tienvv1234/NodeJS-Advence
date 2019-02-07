@@ -94,3 +94,8 @@ overarching : bao chùm
 spread out: trải ra
 refer: tham khảo
 fork: cái nĩa
+
+CI --> countinuous integration
+CI Providers: Travis CI, Circle CI, Codeship, AWS Code build
+
+dist: trusty --> this option to specify os we want to have, this os called trusty(specific version of linux)

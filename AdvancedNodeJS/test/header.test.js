@@ -1,4 +1,19 @@
+const puppeteer = require('puppeteer');
+
 test('Adds two numbers', () => {
-    const sum = 1 + 2;
-    expect(sum).toEqual(3);
-})
+  const sum = 1 + 2;
+  expect(sum).toEqual(3);
+});
+
+test('test', async () => {
+  const browser = await puppeteer.launch({
+    headless: false //this will make browser opened without some graphic
+  });
+  const page = await browser.newPage();
+
+  await page.goto('localhost:3000');
+
+  const text = await page.$eval('a.brand-logo', el => el.innerHTML);
+
+  expect(text).toEqual('Blogster');
+});
