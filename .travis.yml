@@ -20,7 +20,7 @@ cache:
 # want executed at the command line
 install:
   - npm install
-  - npm run build
+  - npm --prefix/AdvancedNodeJS run build
 script:
   # nohup: if the shell is closed, don't kill anything this command creates
   # npm run start: run the server
