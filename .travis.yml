@@ -14,8 +14,8 @@ env:
 # this will be override all the packages
 cache:
   directories:
-    - node_modules
-    - client/node_modules
+    - AdvancedNodeJS/node_modules
+    - AdvancedNodeJS/client/node_modules
 # this is going to list off a couple of command that we
 # want executed at the command line
 install:
