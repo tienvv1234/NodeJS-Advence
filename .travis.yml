@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - '8'
+#create virtual machine with trusty os linux version
+dist: trusty
+services:
+  - mongodb
+  - redis-server
+env:
+  - NODE_ENV=ci PORT=3000 #this will combine the two env variables in one build.
+# this will download all dependencies in first time and cache the node module
+# in the next time
+# if node modules changed, it still copy the old node_modules and run npm install
+# this will be override all the packages
+cache:
+  directories:
+    - node_modules
+    - client/node_modules
+# this is going to list off a couple of command that we
+# want executed at the command line
+install:
+  - npm install
+  - npm run build
+script:
+  # nohup: if the shell is closed, don't kill anything this command creates
+  # npm run start: run the server
+  # &: run this command in a subshell(in the background)
+  - nohup npm run start &
+  - sleep 3
+  - npm run test
