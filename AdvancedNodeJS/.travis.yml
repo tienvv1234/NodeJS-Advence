@@ -7,7 +7,7 @@ services:
   - mongodb
   - redis-server
 env:
-  - NODE_ENV=ci
+  - NODE_ENV=ci PORT=3000 #this will combine the two env variables in one build.
 # this will download all dependencies in first time and cache the node module
 # in the next time
 # if node modules changed, it still copy the old node_modules and run npm install
