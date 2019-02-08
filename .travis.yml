@@ -25,6 +25,8 @@ script:
   # nohup: if the shell is closed, don't kill anything this command creates
   # npm run start: run the server
   # &: run this command in a subshell(in the background)
+  # anything that we put under this script tag here
+  # is going to be run during the build step
   - nohup npm --prefix AdvancedNodeJS run start &
   - sleep 3
   - npm --prefix AdvancedNodeJS run test
