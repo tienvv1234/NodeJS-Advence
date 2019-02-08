@@ -8,7 +8,7 @@ test('Adds two numbers', () => {
 test('test', async () => {
   const browser = await puppeteer.launch({
     headless: true, //this will make browser opened without some graphic
-    args:['--no-sandbox']
+    args: ['--no-sandbox']
   });
   const page = await browser.newPage();
 
@@ -18,4 +18,5 @@ test('test', async () => {
   const text = await page.$eval('a.brand-logo', el => el.innerHTML);
 
   expect(text).toEqual('Blogster');
+  await page.close();
 });
