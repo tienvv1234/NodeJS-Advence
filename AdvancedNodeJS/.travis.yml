@@ -14,13 +14,13 @@ env:
 # this will be override all the packages
 cache:
   directories:
-    - node_modules
-    - client/node_modules
+    - AdvancedNodeJS/node_modules
+    - AdvancedNodeJS/client/node_modules
 # this is going to list off a couple of command that we
 # want executed at the command line
 install:
   - npm install
-  - npm run build
+  - npm --prefix AdvancedNodeJS run build
 script:
   # nohup: if the shell is closed, don't kill anything this command creates
   # npm run start: run the server
