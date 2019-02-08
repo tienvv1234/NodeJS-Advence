@@ -1,11 +1,10 @@
 const puppeteer = require('puppeteer');
 
-test('Adds two numbers', () => {
-  const sum = 1 + 2;
-  expect(sum).toEqual(3);
-});
-
-describe('When logged in', async () => {
+describe('When logged in', () => {
+  test('Adds two numbers', () => {
+    const sum = 1 + 2;
+    expect(sum).toEqual(3);
+  });
   test('test', async () => {
     const browser = await puppeteer.launch({
       headless: true, //this will make browser opened without some graphic
